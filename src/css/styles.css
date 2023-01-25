@@ -30,9 +30,9 @@
 .navbar img {
   position: absolute;
   width: 300px;
-  height: 40px;
-  top: 1rem;
-  left: 133px;
+  height: 50px;
+  top: 2.5rem;
+  left: 40px;
 }
 
 .sub-bar {
@@ -334,11 +334,48 @@ option {
   margin-top: .5rem;
 }
 
+.container-input-general {
+  background-image: url(../images/cover-pokemon-preview.png);
+  height: 83vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
 
+.container-input-name {
+  width: 300px;
+  height: 400px;
+  background-color: darkgray;
+  margin-right: 1.5rem;
+  margin-top: 5rem;
+  border-radius: 5px;
+}
+
+.container-input-name img {
+  margin-top: 2rem;
+  width: 65%;
+}
 
 @media (min-width: 572px) {
   .col {
     width: 50%;
+  }
+
+  .navbar img {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 2.5rem;
+    left: 90px;
+  }
+
+  .container-input-name {
+    width: 300px;
+    height: 400px;
+    background-color: darkgray;
+    margin-right: 8rem;
+    margin-top: 5rem;
+    border-radius: 5px;
   }
 }
 
@@ -346,16 +383,66 @@ option {
   .col {
     width: 33.333333%;
   }
+
+  .navbar img {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 2.5rem;
+    left: 120px;
+  }
+
+  .container-input-name {
+    width: 300px;
+    height: 400px;
+    background-color: darkgray;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    border-radius: 5px;
+  }
 }
 
 @media (min-width: 992px) {
   .col {
     width: 25%;
   }
+  .navbar img {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 1.5rem;
+    left: 120px;
+  }
+
+  .container-input-name {
+    width: 300px;
+    height: 400px;
+    background-color: darkgray;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    border-radius: 5px;
+  }
 }
 
 @media (min-width: 1176px) {
   .col {
     width: 20%;
+  }
+
+  .navbar img {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 2.5rem;
+    left: 120px;
+  }
+
+  .container-input-name {
+    width: 300px;
+    height: 400px;
+    background-color: darkgray;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    border-radius: 5px;
   }
 }

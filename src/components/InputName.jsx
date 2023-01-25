@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { changeUserName } from '../store/slices/userName.slice';
+import pokeSaludo from '../images/pokemon.gif'
+import pokeBag from '../images/cover-pokemon-preview.png'
 
 const InputName = () => {
 
@@ -15,12 +17,16 @@ const InputName = () => {
 	}
 
 	return (
-		<div>
-			<h1>Input Name</h1>
-			<input type="text" 
-			value={inputValue}
-			onChange={(e) => setInputValue(e.target.value)} />
-			<button onClick={clickButton}>Submit</button>
+		<div className='container-input-general'>
+			<div className='container-input-name'>
+			  <img src={pokeSaludo} alt="" />
+			  <h2>Hello Trainer</h2>
+			  <p>Give me your name to start</p>
+			  <input type="text" 
+			  value={inputValue}
+			  onChange={(e) => setInputValue(e.target.value)} />
+			  <button onClick={clickButton}>Submit</button>
+			 </div>
 		</div>
 	);
 };
