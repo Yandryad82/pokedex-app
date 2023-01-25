@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { changeUserName } from '../store/slices/userName.slice';
 import pokeSaludo from '../images/pokemon.gif'
 import pokeBag from '../images/cover-pokemon-preview.png'
+import bola from '../images/bola.png'
 
 const InputName = () => {
 

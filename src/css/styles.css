@@ -35,6 +35,7 @@
   left: 40px;
 }
 
+
 .sub-bar {
   width: 100%;
   background-color: #0C0C0C;
@@ -354,6 +355,10 @@ option {
 .container-input-name img {
   margin-top: 2rem;
   width: 65%;
+}
+
+.container-input-name button {
+  background-color: darkorange;
 }
 
 @media (min-width: 572px) {
