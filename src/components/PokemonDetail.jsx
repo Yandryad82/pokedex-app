@@ -161,9 +161,9 @@ const PokemonDetail = () => {
                 </>
               </div>
               <div className="container-boton-move-list">
-               <button onClick={() => setPageMove(pageMove-1)} disabled={pageMove === 1}>Prev Page</button>
+               <button className='button-prev-movements' onClick={() => setPageMove(pageMove-1)} disabled={pageMove === 1}>Prev Page</button>
                  <span>{pageMove} / {totalPage}</span>
-               <button onClick={() => setPageMove(pageMove+1)} disabled={pageMove === totalPage}>Next Page</button> 
+               <button className='button-next-movements' onClick={() => setPageMove(pageMove+1)} disabled={pageMove === totalPage}>Next Page</button> 
               </div>
               
              </div>

@@ -340,6 +340,18 @@ option {
   gap: 10px;
 }
 
+.button-prev-movements {
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+}
+
+.button-next-movements {
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(47, 0, 255);
+}
+
 .container-abilites {
   width:150px;
   height: auto;
@@ -349,7 +361,7 @@ option {
   color: white;
   margin: 0 auto;
   padding: .5rem;
-  
+  box-shadow: 15px 5px 10px #01041d44;
 }
 
 .abilities-list {
@@ -369,6 +381,7 @@ option {
   color: white;
   margin: 0 auto;
   padding: 1rem;
+  box-shadow: -15px 5px 10px #01041d44;
 }
 
 
