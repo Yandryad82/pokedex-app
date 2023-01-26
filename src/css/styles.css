@@ -6,7 +6,6 @@
     text-align: center;
   }
   
-
   .general-container{
     width: 100%;
     
@@ -237,7 +236,7 @@ option {
   display: flex;
   justify-content: center;
   align-items: end;
-  padding-bottom: 2rem;
+  padding-bottom: 8rem;
   gap: 1rem;
 }
 
@@ -250,6 +249,10 @@ option {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  box-shadow: 5px 5px 0;      /* Sombra sin desenfoque */
+  box-shadow: 5px 5px 2px;    /* Sombra con ligero desenfoque */
+  box-shadow: 5px 5px 10px;   /* Sombra desenfocada */
+  box-shadow: 5px 5px 40px;   /* Sombra con un desenfoque casi disipado */
 }
 
 .container-image-details {
@@ -313,6 +316,10 @@ option {
   margin-top: 9rem;
   background-color: white;
   border-radius: 5px;
+  box-shadow: 5px 5px 0;      /* Sombra sin desenfoque */
+  box-shadow: 5px 5px 2px;    /* Sombra con ligero desenfoque */
+  box-shadow: 5px 5px 10px;   /* Sombra desenfocada */
+  box-shadow: 5px 5px 40px;   /* Sombra con un desenfoque casi disipado */
 }
 
 .container-move-list{
@@ -321,11 +328,28 @@ option {
   justify-content: center;
   padding-bottom: .5rem;
   align-items: center;
+  font-weight: bold;
 }
 
 
 .container-boton-move-list {
   margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.container-abilites {
+  width:150px;
+  height: auto;
+  background-color: rgb(250, 16, 16);
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
+  padding: .5rem;
+  
 }
 
 .abilities-list {
@@ -333,6 +357,27 @@ option {
   list-style: none;
   justify-content: center;
   margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.types {
+  width:150px;
+  height: auto;
+  background-color: rgb(39, 16, 250);
+  margin: 15px;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.span-abilitie {
+  margin-bottom: 10px;
+}
+
+.span-type {
+  margin-bottom: 10px;
 }
 
 .container-input-general {

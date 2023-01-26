@@ -8,7 +8,8 @@ const PokemonCard = ({ url }) => {
   const [pokemon, setPokemon] = useState({});
     
   const navigate = useNavigate();
-    
+
+      
   useEffect(() => {
     axios.get(url).then((res) => setPokemon(res.data));
   }, []);
@@ -101,8 +102,8 @@ const PokemonCard = ({ url }) => {
             <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
           </div>   
           <div className="container-name-type">
-           <h2 style={{ color: getBackground() }} >{firstLetter()}</h2>
-           <h5>{firstLetterType1()}</h5>
+            <h2 style={{ color: getBackground() }} >{firstLetter()}</h2>
+            <h5>{firstLetterType1()}</h5>
           <img className="vector" src={line} alt="" />
           </div>
           <div className="container-info-general">

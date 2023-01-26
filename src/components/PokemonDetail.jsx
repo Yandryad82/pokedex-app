@@ -117,12 +117,12 @@ const PokemonDetail = () => {
                 <br />
                 <img src={line} alt="" />
                 <br />
-                <span>Abilities</span>
-                <>
+                <span className='span-abilitie'>Abilities</span>
+                <div className='container-abilites'>
                 {abilities.map(abilitie => (
                   <li className='abilities-list'>{abilitie.ability.name}</li>
                 ))}
-                </>
+                </div>
               </div>
               <div className='container-name-details'>
                   <h1 style={{ color: getBackground() }}>{firstLetter()}</h1>
@@ -138,8 +138,10 @@ const PokemonDetail = () => {
                 <br />  
                 <img src={line} alt="" />
                 <br />
-                <span>Type</span>
-                <p>{pokemon.types?.[0].type.name}</p>
+                <span className='span-type'>Type</span>
+                <div className='types'>
+                  <p>{pokemon.types?.[0].type.name}</p>
+                </div>
               </div>
             </div>
             <div className='container-moviments-general'>
@@ -150,7 +152,7 @@ const PokemonDetail = () => {
                 <h3>Movements</h3>
                 <>
                   {pokemonsMovesPaginated.map(move => (
-                    <li className='container-move-list'>
+                    <li className='container-move-list' style={{ color: getBackground() }}>
                       
                       {move.move.name}
                       

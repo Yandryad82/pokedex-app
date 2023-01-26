@@ -26,7 +26,7 @@ const InputName = () => {
 			  <input type="text" 
 			  value={inputValue}
 			  onChange={(e) => setInputValue(e.target.value)} />
-			  <button onClick={clickButton}>Submit</button>
+			  <button onClick={clickButton} type='button' >Submit</button>
 			 </div>
 		</div>
 	);
